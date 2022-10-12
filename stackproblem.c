@@ -57,16 +57,16 @@ int pop(int *pvalue)
 int main()
 {
     FILE *fp;
-    char file_name[] = "stackproblem.txt";
+    char fileName[] = "stackproblem.txt";
     char ch;
     int result;
     int value;
 
-    fp = fopen(file_name, "r");
+    fp = fopen(fileName, "r");
     if (fp == NULL)
     {
         // failed to open file - report the problem
-        fprintf(stderr, "ERROR: Cannot open %s\n", file_name);
+        fprintf(stderr, "ERROR: Cannot open %s\n", fileName);
         return -1;
     }
 
